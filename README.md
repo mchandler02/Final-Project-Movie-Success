@@ -11,3 +11,11 @@ Using the movie data, we used five different models to predict a movie's success
 
 To see how each Machine Learning model performed and our final resutls, visit
 
+# Directions
+
+1. Clone the repo to your desktop.
+1. Open a git bash (Windows) or terminal (Mac) at the Final-Project-Movie-Sucess folder.
+1. Type `<source activate PythonData>`.
+1. Type `<jupyter notebook>`.
+1. Once the jupyter notebook is opened, open the Machine_Learning folder.
+1. There you will find all five Machine Learning models and you will be able to run each model. For KNN there will be three different files to run that will showcase the following: using the Performance variable, using the Rating Integer Variable, & fine tuning the model.
