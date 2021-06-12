@@ -81,21 +81,45 @@
         <br>
         <h1>Logistic Regression</h1>
         <hr>
-        <a href="logistic_regression.html"><img class="img-fluid" src="../Images/plot_latitude_vs_humidity.png" 
-          class="img-thumbnail" alt="Logistic Regression" width="280" align="left"></a>
+        <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Sigmoid_Function.PNG" 
+          class="img-thumbnail" alt="Logistic Regression" width="520" align="center"></a>
 
         <p>
-          <strong> Machine Learning Models </strong>
+          <strong> Logistic Regression
+          </strong>
           <br>
-          We are using .
+          Logistic Regression is a statistical method for predicting binary outcomes from data. 
+          It uses an equation as the representation, similar to linear regression. 
+          Input values (x) are combined linearly using weights or coefficient values to predict an output value (y). 
+          The logistic function, which is also known as the sigmoid function, creates an S-shaped curve that 
+          can take any real-valued number and map it into a value between 0 and 1.
+
           
           <br>
           <p>
-            To . 
+           <strong>  Implementing the Movie Dataset : </strong>
+            After completing the ETL, the clean movie file was used to perform Logistic Regression. 
+            In order to create the Logistic Regression model, first the movie titles needed to be dropped 
+            from the dataset due to them being strings. Second, the Rating Integer was dropped due to it 
+            being utilized in the ETL to create the performance variable, which determined if a movie score
+             was successful or unsuccessful. 
+            
+            The Train Test Split was created using the performance variable, which was created during the 
+            ETL to determine if a movie’s Rating Integer was greater than 7 (successful) or less than or 
+            equal to 7 (unsuccessful/fail). 
+            <br>
             <br>
             <Strong>Analysis : </Strong>
             <br>
-            It is found that .
+            Using the Logistic Regression model, 88% of the time the model is successful at predicting
+             a movie’s success. However, the model seems to under predict the success of a movie.
+              As shown below, the model predicts a 0 (unsuccessful/fail) when the actual label would be a success.
+               Having the model under predict movie scores could lead to fewer movie fanatics watching movies 
+               that are actually well rated. <br>  
+               <br>
+               <strong> Data Score: </strong> 0.882876468494126  <br>
+
+               <strong> Data Score: </strong> 0.880469583778015  
           </p>
         </p>
         <hr>
@@ -113,7 +137,7 @@
               class="img-thumbnail" alt="Random Forest"></a>
           </div>
           <div class="col col-3 col-md-6">
-            <a href="logistic_regression.html"><img class="img-fluid" src="../Images/plot_latitude_vs_humidity.png" 
+            <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Sigmoid_Function.PNG" 
               class="img-thumbnail"alt="Logistic Regression" id="imgsel"></a>
           </div>
           <div class="col col-3 col-md-6">
@@ -121,7 +145,7 @@
                class="img-thumbnail" alt="Support Vector Machine"></a>
           </div>
           <div class="col col-3 col-md-6">
-            <a href="knn.html"><img class="img-fluid" src="../Images/plot_latitude_vs_windspeed.png" 
+            <a href="knn.html"><img class="img-fluid" src="Images/KNN.png" 
               class="img-thumbnail" alt="K Nearest Neighbors"></a>
           </div>
           <div class="col col-3 col-md-6">
