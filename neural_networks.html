@@ -78,23 +78,52 @@
       <!-- left side begins -->
       <div class="col col-12 col-md-8 divbdy">
         <br>
-        <h1>Neural Networks</h1>
+        <h1> Neural Networks</h1>
         <hr>
-        <a href="neural_networks.html"><img class="img-fluid" src="../Images/plot_latitude_vs_humidity.png" 
-          class="img-thumbnail" alt="Neural Networks" width="280" align="left"></a>
-
+        <a href="neural_networks.html"><img class="img-fluid" src="Images/neural_networks.png" 
+          class="img-thumbnail" alt="Neural Networks" width="780" align="left"></a>
+           <br>
         <p>
-          <strong> Machine Learning Models </strong>
-          <br>
-          We are using .
+          <strong> Machine Learning Model -  Neural Networks </strong>
+          <br> <br>
+          A neural net consists of many different layers of neurons, with each layer 
+          receiving inputs from previous layers, and passing outputs to further layers. <br>
+          The way each layer output becomes the input for the next layer depends on the 
+          weight given to that specific link, which depends on the cost function, 
+          and the optimizer. <br> The neural net iterates for a predetermined number of 
+          iterations, called epochs. After each epoch, the cost function is analyzed to 
+          see where the model could be improved. <br> The optimizing function then alters the 
+          internal mechanics of the network, such as the weights, and the biases, 
+          based on the information provided by the cost function, until the cost function is minimized.
+
+
           
           <br>
           <p>
-            To . 
-            <br>
-            <Strong>Analysis : </Strong>
-            <br>
-            It is found that .
+            When categorizing the movie data using ratingInter, which had 8 options, 
+            the model had the following accuracy scores:
+
+            Accuracy with one hidden layer: <br> <br>
+              937/937 - 0s - loss: 1.1234 - acc: 0.5496  <br>
+              Normal Neural Network - Loss: 1.1233897466160827, Accuracy: 0.5496264696121216 <br>
+            
+              Accuracy with two hidden layers:  <br> <br>
+              937/937 - 0s - loss: 1.3102 - acc: 0.5358  <br>
+              Normal Neural Network - Loss: 1.310229677909721, Accuracy: 0.5357524156570435 <br> <br>
+
+              For Neural Network we applied ratingInteger in place of performance. <br>
+              Both ratingInterger and performance have high relationship and 
+              we can’t use both in the same model. 
+              <br>
+              We applied ratingInteger in KNN so that we can compare with Neural Network and the latter had a higher score. 
+              <br>
+              We also found out that two hidden layers in Neural Network had a lower score 
+              than one hidden layer, therefore it’s advisable to apply one hidden layer. <br>
+              However, the score for two hidden layer seem to be improving the more times we run the model. <br>
+              Initially it had accuracy of 0.51 but after running the model several times accuracy increased to 0.53.
+
+
+
           </p>
         </p>
         <hr>
@@ -107,24 +136,30 @@
         <h2>Machine Learning Models</h2>
         <hr>
         <div class='row'>
-          <div class="col col-3 col-md-6">
-            <a href="random_forest.html"><img class="img-fluid" src="../Images/plot_latitude_vs_temp.png" 
-              class="img-thumbnail" alt="Random Forest" id="imgsel"></a>
+          <div class="col col-12 col-md-10">
+              <h3>Random Forest</h3>
+            <a href="random_forest.html"><img class="img-fluid" src="Images/Random_Forest.png" 
+              class="img-thumbnail" alt="Random Forest
+              "></a>
           </div>
-          <div class="col col-3 col-md-6">
+          <div class="col col-12 col-md-10">
+              <h3>Logistic Regression</h3>
             <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Sigmoid_Function.PNG" 
               class="img-thumbnail" alt="Logistic Regression"></a>
           </div>
-          <div class="col col-3 col-md-6">
-            <a href="svm.html"><img class="img-fluid" src="../Images/plot_latitude_vs_cloudiness.png" 
+          <div class="col col-12 col-md-10">
+              <h3>Support Vector Machine</h3>
+            <a href="svm.html"><img class="img-fluid" src="Images/SVM.png" 
               class="img-thumbnail" alt="Support Vector Machine"></a>
           </div>
-          <div class="col col-3 col-md-6">
+          <div class="col col-12 col-md-10">
+              <h3>K Nearest Neighbors</h3>
             <a href="knn.html"><img class="img-fluid" src="Images/KNN.png" 
               class="img-thumbnail" alt="K Nearest Neighbors"></a>
           </div>
-          <div class="col col-3 col-md-6">
-            <a href="neuralnetworks.html"><img class="img-fluid" src="../Images/plot_latitude_vs_windspeed.png" 
+          <div class="col col-3 col-md-10">
+            <h3>Neural Networks</h3>
+            <a href="neuralnetworks.html"><img class="img-fluid" src="Images/neural_networks.png" 
               class="img-thumbnail" alt="Neural Networks"></a>
           </div>
         </div>

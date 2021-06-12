@@ -84,19 +84,81 @@
         <h1>K Nearest Neighbors</h1>
         <hr>
         <a href="knn.html"><img class="img-fluid" src="Images/KNN.png" 
-          class="img-thumbnail" alt="K Nearest Neighbors" width="280" align="left"></a>
+          class="img-thumbnail" alt="K Nearest Neighbors" width="380" align="left"></a>
 
         <p>
-          <strong> Machine Learning Models </strong>
+          <strong> Machine Learning Model - K Nearest Neighbor
+          </strong>
           <br>
-          We are using .
+          The KNeighborsClassifier model tries to categorize data by assigning it to a data class 
+          which is most similar to the data points nearest to it. The k value is manually selected 
+          by the programmer to optimize the model and can vary depending on the data set used. 
+          Typically, a larger k value will decrease the effects of noise, but the boundaries of 
+          the classifications are not as distinct, so it is a balancing act when trying to determine 
+          which is the best value to use. 
+          (https://scikit-learn.org/stable/modules/neighbors.html#nearest-neighbors-classification)
+
             <br>
           <p>
-            To . 
+            The k values represent the number of neighbor values that are compared and a simple majority 
+            of like type datapoints is used to classify the datapoint being reviewed. For our models, 
+            the k values were selected by reviewing a matplotlib graph of the k values and training 
+            accuracy scores and finding the lowest value where the data appears to stabilize.
+
+          <br> <br>
+          <Strong> Results : </Strong>
+
           <br>
-          <Strong>Analysis : </Strong>
+          <a href="knn.html"><img class="img-fluid" src="Images/KNN_predict-vs-actual.png" 
+            class="img-thumbnail" alt="K Nearest Neighbors" width="160" align="left"></a>
+
+            <br> 
+          When categorizing the movie data into success/failure categories, the model had the 
+          following accuracy scores:
           <br>
-          It is found that .
+          k=17 Train Accuracy: 0.843
+          <br>
+          k=17 Test Accuracy: 0.840
+          <br> <br>
+          This model has an 84% accuracy, but it over predicts the success of the movie meaning it 
+          predicts a success when it actually has a score that indicates a failed movie. <br>
+          This means that a movie fanatic may watch a movie thinking it will be good, 
+          but may then be disappointed when actually watching the movie. <br> <br> <br>
+
+          <a href="knn.html"><img class="img-fluid" src="Images/KNN_FineTuning.png " 
+            class="img-thumbnail" alt="K Nearest Neighbors" width="380" align="left"></a>
+
+            When trying to find which data points had more impact on the model categorizing into success/failure, 
+            removing the columns that indicated that genre of movie improved the model and had the following 
+            accuracy scores:
+            <br> <br>
+            k=13 Train Accuracy: 0.879 <br>
+            k=13 Test Accuracy: 0.884 <br> <br> <br>
+
+            <a href="knn.html"><img class="img-fluid" src="Images/KNN_Ratings.png " 
+              class="img-thumbnail" alt="K Nearest Neighbors" width="380" align="left"></a>
+
+            When categorizing the data into the integer rating scores from 2-9, the model had the 
+            following accuracy scores:<br> <br>
+            k=23 Train Accuracy: 0.506 <br>
+            k=23 Test Accuracy: 0.456 <br>
+
+            <br>
+            
+  
+           
+            This shows that the model is able to better categorize the data into two separate groups instead of 
+            splitting the data into 8 separate groups.
+
+
+
+
+
+            
+
+
+
+
         </p>
       </p>
         <hr>
@@ -109,25 +171,30 @@
         <h2>Machine Learning Models</h2>
         <hr>
         <div class='row'>
-          <div class="col col-3 col-md-6">
-            <a href="random_forest.html"><img class="img-fluid" src="../Images/plot_latitude_vs_temp.png" 
+          <div class="col col-12 col-md-12">
+              <h3>Random Forest</h3>
+            <a href="random_forest.html"><img class="img-fluid" src="Images/Random_Forest.png" 
               class="img-thumbnail" alt="Random Forest
               "></a>
           </div>
-          <div class="col col-3 col-md-6">
+          <div class="col col-12 col-md-12">
+              <h3>Logistic Regression</h3>
             <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Sigmoid_Function.PNG" 
               class="img-thumbnail" alt="Logistic Regression"></a>
           </div>
-          <div class="col col-3 col-md-6">
-            <a href="svm.html"><img class="img-fluid" src="../Images/plot_latitude_vs_cloudiness.png" 
+          <div class="col col-12 col-md-12">
+              <h3>Support Vector Machine</h3>
+            <a href="svm.html"><img class="img-fluid" src="Images/SVM.png" 
               class="img-thumbnail" alt="Support Vector Machine"></a>
           </div>
-          <div class="col col-3 col-md-6">
+          <div class="col col-12 col-md-12">
+              <h3>K Nearest Neighbors</h3>
             <a href="knn.html"><img class="img-fluid" src="Images/KNN.png" 
-              class="img-thumbnail" alt="K Nearest Neighbors" id="imgsel"></a>
+              class="img-thumbnail" alt="K Nearest Neighbors"></a>
           </div>
-          <div class="col col-3 col-md-6">
-            <a href="neuralnetworks.html"><img class="img-fluid" src="../Images/plot_latitude_vs_windspeed.png" 
+          <div class="col col-3 col-md-12">
+            <h3>Neural Networks</h3>
+            <a href="neuralnetworks.html"><img class="img-fluid" src="Images/neural_networks.png" 
               class="img-thumbnail" alt="Neural Networks"></a>
           </div>
         </div>

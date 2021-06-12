@@ -81,13 +81,14 @@
         <br>
         <h1>Logistic Regression</h1>
         <hr>
-        <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Sigmoid_Function.PNG" 
-          class="img-thumbnail" alt="Logistic Regression" width="520" align="center"></a>
-
+        
         <p>
-          <strong> Logistic Regression
+          <strong> Machine Learning Model - Logistic Regression
           </strong>
           <br>
+          <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Sigmoid_Function.PNG" 
+            class="img-thumbnail" alt="Logistic Regression" width="520" align="center"></a>
+             <br>
           Logistic Regression is a statistical method for predicting binary outcomes from data. 
           It uses an equation as the representation, similar to linear regression. 
           Input values (x) are combined linearly using weights or coefficient values to predict an output value (y). 
@@ -107,20 +108,33 @@
             The Train Test Split was created using the performance variable, which was created during the 
             ETL to determine if a movie’s Rating Integer was greater than 7 (successful) or less than or 
             equal to 7 (unsuccessful/fail). 
-            <br>
-            <br>
-            <Strong>Analysis : </Strong>
-            <br>
+            <br> <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Results.PNG" 
+              class="img-thumbnail" alt="Logistic Regression" width="180" align="left"></a>
+            <br> <strong> Results </strong> <br>
+            
+            0 = Fail <br>
+            1 = Success <br>
+            
+            <!-- <Strong>Analysis : </Strong> -->
+            
+            
             Using the Logistic Regression model, 88% of the time the model is successful at predicting
-             a movie’s success. However, the model seems to under predict the success of a movie.
-              As shown below, the model predicts a 0 (unsuccessful/fail) when the actual label would be a success.
-               Having the model under predict movie scores could lead to fewer movie fanatics watching movies 
-               that are actually well rated. <br>  
+             a movie’s success. <br>
+             However, the model tends to over predict the success of the movie meaning it 
+             predicts a success when it actually has a score that indicates a failed movie.<br> 
+             Having a model over predict movie scores could lead to someone watching a movie 
+             thinking it will be good, but then become disappointed when watching the movie.
+             
                <br>
                <strong> Data Score: </strong> 0.882876468494126  <br>
 
-               <strong> Data Score: </strong> 0.880469583778015  
+               <strong> Data Score: </strong> 0.880469583778015  <br>
+
           </p>
+          <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Predictions.PNG" 
+            class="img-thumbnail" alt="Logistic Regression" width="1800" align="center"></a>
+
+           
         </p>
         <hr>
       </div>
@@ -132,24 +146,30 @@
         <h2>Machine Learning Models</h2>
         <hr>
         <div class='row'>
-          <div class="col col-3 col-md-6">
-            <a href="random_forest.html"><img class="img-fluid" src="../Images/plot_latitude_vs_temp.png" 
-              class="img-thumbnail" alt="Random Forest"></a>
+          <div class="col col-12 col-md-10">
+              <h3>Random Forest</h3>
+            <a href="random_forest.html"><img class="img-fluid" src="Images/Random_Forest.png" 
+              class="img-thumbnail" alt="Random Forest
+              "></a>
           </div>
-          <div class="col col-3 col-md-6">
+          <div class="col col-12 col-md-10">
+              <h3>Logistic Regression</h3>
             <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Sigmoid_Function.PNG" 
-              class="img-thumbnail"alt="Logistic Regression" id="imgsel"></a>
+              class="img-thumbnail" alt="Logistic Regression"></a>
           </div>
-          <div class="col col-3 col-md-6">
-            <a href="svm.html"><img class="img-fluid" src="../Images/plot_latitude_vs_cloudiness.png"
-               class="img-thumbnail" alt="Support Vector Machine"></a>
+          <div class="col col-12 col-md-10">
+              <h3>Support Vector Machine</h3>
+            <a href="svm.html"><img class="img-fluid" src="Images/SVM.png" 
+              class="img-thumbnail" alt="Support Vector Machine"></a>
           </div>
-          <div class="col col-3 col-md-6">
+          <div class="col col-12 col-md-10">
+              <h3>K Nearest Neighbors</h3>
             <a href="knn.html"><img class="img-fluid" src="Images/KNN.png" 
               class="img-thumbnail" alt="K Nearest Neighbors"></a>
           </div>
-          <div class="col col-3 col-md-6">
-            <a href="neuralnetworks.html"><img class="img-fluid" src="../Images/plot_latitude_vs_windspeed.png" 
+          <div class="col col-3 col-md-10">
+            <h3>Neural Networks</h3>
+            <a href="neuralnetworks.html"><img class="img-fluid" src="Images/neural_networks.png" 
               class="img-thumbnail" alt="Neural Networks"></a>
           </div>
         </div>

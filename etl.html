@@ -81,21 +81,64 @@
         <h1>ETL</h1>
         <hr>
         <a href="etl.html">
-          <img class="img-fluid" src="../Images/plot_latitude_vs_temp.png" 
+          <img class="img-fluid" src="Images/etl.png" 
             class="img-thumbnail" alt="ETL" width="280" align="left"></a>
 
         <p>
-          <strong> ETL </strong>
+          
           <br>
-          We are using .
+         <strong>  Extract  </strong>
+         The data set that we obtained was a CSV file from Kaggle.
+          (https://www.kaggle.com/gabrielegalimberti/movies-example-for-machine-learning-activities?select=MACHINE_LEARNING_FINAL.csv). 
+          
+          <a href='https://www.kaggle.com/gabrielegalimberti/movies-example-for-machine-learning-activities?select=MACHINE_LEARNING_FINAL.csv'></a>
+
           <br>
           <p>          
-          To . 
+          
+          <Strong> Transform </Strong>
           <br>
-        
-          <Strong>Analysis : </Strong>
+         To ready the data for analysis, we needed to ensure all of the data was consistent across all fields. 
+         We found 2 rows that had misaligned data, so we removed all rows that had  “Karate Kid” in the 
+         title which removed a total of 4 rows. <br>
+
+         We then created a column for movie performance of success or fail: if the rating integer score 
+         was greater than 7, the movie was considered a success, else it was considered a failure. <br>
+         <p>
+        <strong> Load </strong> 
+        The cleaned data was uploaded into a new CSV file titled clean_movies.csv.
+
+        <p>
+          <strong> 
+            References/Credits
+          </strong>
           <br>
-          It is found that. 
+           The websites we took References from are : <br>
+
+           https://machinelearningmastery.com/logistic-regression-for-machine-learning/  
+           
+           <br>
+          
+           https://scikit-learn.org/stable/modules/neighbors.html#nearest-neighbors-classification
+
+           <br>
+
+           https://www.datacamp.com/community/tutorials/random-forests-classifier
+
+           <br>
+
+           https://www.datacamp.com/community/tutorials/svm-classification-scikit-learn-python
+
+           <br>
+
+           https://towardsdatascience.com/classification-using-neural-networks-b8e98f3a904f
+
+           <br>
+
+
+
+        </p>
+        </p>
         </p> 
         </p>
         <hr>
@@ -108,26 +151,32 @@
         <h2>Machine Learning Models</h2>
         <hr>
         <div class='row'>
-            <div class="col col-3 col-md-6">
-              <a href="random_forest.html"><img class="img-fluid" src="../Images/plot_latitude_vs_temp.png" 
-                class="img-thumbnail" alt="Random Forest" id="imgsel"></a>
-            </div>
-            <div class="col col-3 col-md-6">
-              <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Sigmoid_Function.PNG" 
-                class="img-thumbnail" alt="Logistic Regression"></a>
-            </div>
-            <div class="col col-3 col-md-6">
-              <a href="svm.html"><img class="img-fluid" src="../Images/plot_latitude_vs_cloudiness.png" 
-                class="img-thumbnail" alt="Support Vector Machine"></a>
-            </div>
-            <div class="col col-3 col-md-6">
-              <a href="knn.html"><img class="img-fluid" src="Images/KNN.png" 
-                class="img-thumbnail" alt="K Nearest Neighbors"></a>
-            </div>
-            <div class="col col-3 col-md-6">
-              <a href="neuralnetworks.html"><img class="img-fluid" src="../Images/plot_latitude_vs_windspeed.png" 
-                class="img-thumbnail" alt="Neural Networks"></a>
-            </div>
+          <div class="col col-12 col-md-6">
+              <h3>Random Forest</h3>
+            <a href="random_forest.html"><img class="img-fluid" src="Images/Random_Forest.png" 
+              class="img-thumbnail" alt="Random Forest
+              "></a>
+          </div>
+          <div class="col col-12 col-md-6">
+              <h3>Logistic Regression</h3>
+            <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Sigmoid_Function.PNG" 
+              class="img-thumbnail" alt="Logistic Regression"></a>
+          </div>
+          <div class="col col-12 col-md-6">
+              <h3>Support Vector Machine</h3>
+            <a href="svm.html"><img class="img-fluid" src="Images/SVM.png" 
+              class="img-thumbnail" alt="Support Vector Machine"></a>
+          </div>
+          <div class="col col-12 col-md-6">
+              <h3>K Nearest Neighbors</h3>
+            <a href="knn.html"><img class="img-fluid" src="Images/KNN.png" 
+              class="img-thumbnail" alt="K Nearest Neighbors"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <h3>Neural Networks</h3>
+            <a href="neuralnetworks.html"><img class="img-fluid" src="Images/neural_networks.png" 
+              class="img-thumbnail" alt="Neural Networks"></a>
+          </div>
         </div>
       </div>
       <!-- right side ends -->
