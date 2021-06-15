@@ -80,21 +80,45 @@
         <br>
         <h1>Support Vector Machine</h1>
         <hr>
-        <a href="svm.html"><img class="img-fluid" src="../Images/plot_latitude_vs_cloudiness.png" 
-          class="img-thumbnail" alt="Support Vector Machine" width="280" align="left"></a>
+        <a href="svm.html"><img class="img-fluid" src="Images/SVM.png" 
+          class="img-thumbnail" alt="Support Vector Machine" width="680" align="center"></a>
+          <br> <br>
 
         <p>
-          <strong> Support Vector Machine </strong>
+          <strong> Machine Learning Model -  Support Vector Machine </strong>
           <br>
-          We are using a.
+          Support Vector Machine offers very high accuracy compared to other classifiers such as logistic regression and decision trees.
+          <br><br>
+          <strong>  How does SVM work?  </strong>
+          The main objective is to segregate the given dataset in the best possible way. 
+          The distance between the nearest points is known as the margin. 
+          The objective is to select a hyperplane with the maximum possible margin between 
+          support vectors in the given dataset. <br> <br>
+          SVM searches for the maximum marginal 
+          hyperplane in the following steps: <br>
+
+          1. Generate hyperplanes which segregate the classes in the best way. <br>
+          2. Select the right hyperplane with the maximum segregation from the nearest data points. <br>
+
           
           <br>
-          <p>
-            To . 
+          <p> <strong> Results : </strong> <br>
+            When categorizing the movie data into success/failure categories, the model 
+            had the following accuracy scores: <br>
+
+            Training Data Score: 0.8786044855820577 <br>
+            Testing Data Score: 0.8826040554962646  <br>
+            Hyperparameter tuning <br>
+            {'C': 50, 'gamma': 0.0001} <br>
+            0.8850096104439835
+            
+            
+          <br> <br>
+          SVM is the second most accurate Model after Random Forest. <br>
+          Hyperparameter tuning improved accuracy slightly. 
+
           <br>
-          <Strong>Analysis : </Strong>
-          <br>
-          It is found that.
+          
         </p>
       </p>
         <hr>
@@ -107,24 +131,30 @@
         <h2>Machine Learning Models</h2>
         <hr>
         <div class='row'>
-          <div class="col col-3 col-md-6">
-            <a href="random_forest.html"><img class="img-fluid" src="../Images/plot_latitude_vs_temp.png" 
-              class="img-thumbnail" alt="Random Forest"></a>
+          <div class="col col-12 col-md-10">
+              <h3>Random Forest</h3>
+            <a href="random_forest.html"><img class="img-fluid" src="Images/Random_Forest.png" 
+              class="img-thumbnail" alt="Random Forest
+              "></a>
           </div>
-          <div class="col col-3 col-md-6">
-            <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Predictions.PNG" 
-              class="img-thumbnail" alt="Logistic Regression "></a>
+          <div class="col col-12 col-md-10">
+              <h3>Logistic Regression</h3>
+            <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Sigmoid_Function.PNG" 
+              class="img-thumbnail" alt="Logistic Regression"></a>
           </div>
-          <div class="col col-3 col-md-6">
-            <a href="svm.html"><img class="img-fluid" src="../Images/plot_latitude_vs_cloudiness.png" 
-              class="img-thumbnail" alt="Support Vector Machine " id="imgsel"></a>
+          <div class="col col-12 col-md-10">
+              <h3>Support Vector Machine</h3>
+            <a href="svm.html"><img class="img-fluid" src="Images/SVM.png" 
+              class="img-thumbnail" alt="Support Vector Machine"></a>
           </div>
-          <div class="col col-3 col-md-6">
+          <div class="col col-12 col-md-10">
+              <h3>K Nearest Neighbors</h3>
             <a href="knn.html"><img class="img-fluid" src="Images/KNN.png" 
               class="img-thumbnail" alt="K Nearest Neighbors"></a>
           </div>
-          <div class="col col-3 col-md-6">
-            <a href="neuralnetworks.html"><img class="img-fluid" src="../Images/plot_latitude_vs_windspeed.png" 
+          <div class="col col-3 col-md-10">
+            <h3>Neural Networks</h3>
+            <a href="neuralnetworks.html"><img class="img-fluid" src="Images/neural_networks.png" 
               class="img-thumbnail" alt="Neural Networks"></a>
           </div>
         </div>
