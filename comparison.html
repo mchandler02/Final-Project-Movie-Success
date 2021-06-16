@@ -80,34 +80,57 @@
             <br>
             <h1>Comparison: Machine Learning Models </h1>
             <hr>
-            <p>Click any image to get an in-depth analysis</p>
+            <p>Click any Image to get an in-depth analysis</p>
             <div class='row'>
-              <div class="col col-12 col-md-6">
+              <div class="col col-12 col-md-3">
                   <h3>Random Forest</h3>
                 <a href="random_forest.html"><img class="img-fluid" src="Images/Random_Forest.png" 
                   class="img-thumbnail" alt="Random Forest
                   "></a>
               </div>
-              <div class="col col-12 col-md-6">
+              <div class="col col-12 col-md-4">
                   <h3>Logistic Regression</h3>
                 <a href="logistic_regression.html"><img class="img-fluid" src="Images/LR_Sigmoid_Function.PNG" 
                   class="img-thumbnail" alt="Logistic Regression"></a>
               </div>
-              <div class="col col-12 col-md-6">
+              <div class="col col-12 col-md-5">
                   <h3>Support Vector Machine</h3>
                 <a href="svm.html"><img class="img-fluid" src="Images/SVM.png" 
                   class="img-thumbnail" alt="Support Vector Machine"></a>
               </div>
-              <div class="col col-12 col-md-6">
+              <div class="col col-12 col-md-4">
                   <h3>K Nearest Neighbors</h3>
-                <a href="knn.html"><img class="img-fluid" src="Images/KNN.png" 
+                <a href="knn.html"><img class="img-fluid" src="Images/knn_1.png" 
                   class="img-thumbnail" alt="K Nearest Neighbors"></a>
               </div>
-              <div class="col col-3 col-md-12">
+              <div class="col col-3 col-md-4">
                 <h3>Neural Networks</h3>
                 <a href="neuralnetworks.html"><img class="img-fluid" src="Images/neural_networks.png" 
                   class="img-thumbnail" alt="Neural Networks"></a>
               </div>
+              <p>  <br>
+                <strong> Binary Classification--Success or Fail   </strong>  <br>
+                Random Forest, Logistic Regression, Support Vector Machine (SVM), 
+                and K Nearest Neighbor (KNN) models were used to classify the movie data 
+                as successful or failed movies.<br>
+                Random Forest had the highest testing data 
+                score of 0.896, so for this dataset, we would recommend using this 
+                machine learning model. <br>
+                However, KNN had the lowest score of 0.840, 
+                so given the small range of difference between all four models, 
+                any of these options would be acceptable to use.
+
+              </p> <br>
+               <p>  <strong>Multi-label Classification--Rating Integer of 2-9 </strong> <br>
+                
+                KNN and a Neural Network were used to classify the movies into specific rating 
+                integers ranging from 2 to 9. These models were much less successful and only 
+                predicted the correct score about half of the time. <br>
+                The most successful model was the Neural Network with one hidden layer 
+                which had a score of 0.546. The least successful model was KNN which only 
+                had a score of 0.456.
+                
+               </p>
             </div>
           </div>
           <!-- end of right side -->

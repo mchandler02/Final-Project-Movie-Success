@@ -81,11 +81,11 @@
      
       <div class="col col-12 col-md-12 divbdy">
         <br>
-        <h1>K Nearest Neighbors</h1>
+        <h1> K Nearest Neighbors</h1>
         <hr>
-        <a href="knn.html"><img class="img-fluid" src="Images/KNN.png" 
-          class="img-thumbnail" alt="K Nearest Neighbors" width="380" align="left"></a>
-
+        <a href="knn.html"><img class="img-fluid" src="Images/knn_1.png" 
+          class="img-thumbnail" alt="K Nearest Neighbors" width="380" align="center"></a>
+          <br> <br>
         <p>
           <strong> Machine Learning Model - K Nearest Neighbor
           </strong>
@@ -100,48 +100,59 @@
 
             <br>
           <p>
+
+            <a href="knn.html"><img class="img-fluid" src="Images/KNN_predict-vs-actual.png" 
+              class="img-thumbnail" alt="K Nearest Neighbors" width="160" align="left"></a>
+              <br>
             The k values represent the number of neighbor values that are compared and a simple majority 
-            of like type datapoints is used to classify the datapoint being reviewed. For our models, 
-            the k values were selected by reviewing a matplotlib graph of the k values and training 
+            of like type datapoints is used to classify the datapoint being reviewed. <br>
+            For our models, the k values were selected by reviewing a matplotlib graph of the k values and training 
             accuracy scores and finding the lowest value where the data appears to stabilize.
 
           <br> <br>
-          <Strong> Results : </Strong>
-
+          
           <br>
-          <a href="knn.html"><img class="img-fluid" src="Images/KNN_predict-vs-actual.png" 
-            class="img-thumbnail" alt="K Nearest Neighbors" width="160" align="left"></a>
+          
 
-            <br> 
+            
+            <Strong> Results : </Strong> <br>
+
+            0 = Fail <br>
+            1 = Success <br> <br> <br> <br>
+
+            <a href="knn.html"><img class="img-fluid" src="Images/KNN.png" 
+              class="img-thumbnail" alt="K Nearest Neighbors" width="380" align="left"></a>
+                <br>
+
           When categorizing the movie data into success/failure categories, the model had the 
           following accuracy scores:
           <br>
-          k=17 Train Accuracy: 0.843
+          k=17  <strong> Train Accuracy:  </strong> 0.843
           <br>
-          k=17 Test Accuracy: 0.840
+          k=17 <strong>  Test Accuracy:  </strong> 0.840
           <br> <br>
           This model has an 84% accuracy, but it over predicts the success of the movie meaning it 
           predicts a success when it actually has a score that indicates a failed movie. <br>
           This means that a movie fanatic may watch a movie thinking it will be good, 
-          but may then be disappointed when actually watching the movie. <br> <br> <br>
+          but may then be disappointed when actually watching the movie. <br> <br> 
 
           <a href="knn.html"><img class="img-fluid" src="Images/KNN_FineTuning.png " 
-            class="img-thumbnail" alt="K Nearest Neighbors" width="380" align="left"></a>
-
+            class="img-thumbnail" alt="K Nearest Neighbors" width="420" align="left"></a>
+           <br> <br>
             When trying to find which data points had more impact on the model categorizing into success/failure, 
             removing the columns that indicated that genre of movie improved the model and had the following 
             accuracy scores:
             <br> <br>
-            k=13 Train Accuracy: 0.879 <br>
-            k=13 Test Accuracy: 0.884 <br> <br> <br>
+            k=13  <strong> Train Accuracy:  </strong> 0.879 <br>
+            k=13 <strong>  Test Accuracy:  </strong> 0.884 <br> <br> <br> <br> <br> <br>
 
             <a href="knn.html"><img class="img-fluid" src="Images/KNN_Ratings.png " 
-              class="img-thumbnail" alt="K Nearest Neighbors" width="380" align="left"></a>
-
+              class="img-thumbnail" alt="K Nearest Neighbors" width="420" align="left"></a>
+               <br> <br>
             When categorizing the data into the integer rating scores from 2-9, the model had the 
             following accuracy scores:<br> <br>
-            k=23 Train Accuracy: 0.506 <br>
-            k=23 Test Accuracy: 0.456 <br>
+            k=23  <strong> Train Accuracy:  </strong> 0.506 <br>
+            k=23  <strong>  Test Accuracy:  </strong> 0.456 <br>
 
             <br>
             
