@@ -8,7 +8,7 @@ img {
 
 h1, h2, h3{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: lightseagreen;
+  color: brown;
 }
 
 h1{
@@ -40,7 +40,8 @@ p{
 }
 
 .navbar a{
-  background-color:white;
+  background-color: burlywood;
+  
 }
 
 body {
@@ -63,7 +64,7 @@ body {
 
 .homebtn a{
   width: 110px;
-  background: lightseagreen;
+  background: burlywood;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 18px;
   font-weight: bold;
