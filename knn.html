@@ -96,8 +96,7 @@
           Typically, a larger k value will decrease the effects of noise, but the boundaries of 
           the classifications are not as distinct, so it is a balancing act when trying to determine 
           which is the best value to use. 
-          (https://scikit-learn.org/stable/modules/neighbors.html#nearest-neighbors-classification)
-
+          
             <br>
           <p>
 
@@ -131,10 +130,10 @@
           <br>
           k=17 <strong>  Test Accuracy:  </strong> 0.840
           <br> <br>
-          This model has an 84% accuracy, but it over predicts the success of the movie meaning it 
-          predicts a success when it actually has a score that indicates a failed movie. <br>
-          This means that a movie fanatic may watch a movie thinking it will be good, 
-          but may then be disappointed when actually watching the movie. <br> <br> 
+          This model has an 84% accuracy, but it under-predicts the success of the movie meaning it 
+          predicts a fail when it actually has a score that indicates a successful movie. 
+          This means that a movie fanatic may not watch a movie thinking it will be bad, 
+          but may then miss out on watching something they would actually have enjoyed. <br> <br> 
 
           <a href="knn.html"><img class="img-fluid" src="Images/KNN_FineTuning.png " 
             class="img-thumbnail" alt="K Nearest Neighbors" width="420" align="left"></a>
