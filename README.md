@@ -9,7 +9,7 @@ We chose this dataset because it was designed for Machine Learning, had variable
 
 Using the movie data, we used five different models to predict a movie's success: Logistic Regression, Random Forest, KNN, SVM, and Neural Networks. 
 
-To see how each Machine Learning model performed and our final resutls, visit
+To see how each Machine Learning model performed and our final results, visit https://mchandler02.github.io/Final-Project-Movie-Success/.
 
 # Directions
 
